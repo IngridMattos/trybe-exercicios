@@ -1,0 +1,46 @@
+h1 {
+    background-color: tomato;
+}
+h1 {
+    font-family: monospace, sans-serif;
+    font-size: 60px;
+    font-style: italic;
+    
+}
+p{
+    font-weight: 600;
+    font-size: 3em;
+    font-style: italic;
+}
+#Lista-cores{
+    background-color:salmon;
+    font-weight: bold;
+    font-style:oblique;
+    line-height: 50px;
+    text-align:center;
+    
+}
+.estilo-cores {
+    background-color:rgb(100,200, 300);
+    text-decoration:;
+
+}
+.amarelo {
+    background-color: yellow;
+    ;
+}
+.vermelho {
+    background-color: red;
+}
+.marrom {
+    background-color: brown;
+}
+.azul {
+    background-color: rgb(120, 130,200);
+}
+.roxo {
+    background-color: purple;
+}
+body {
+    font-size: 20px;
+}
