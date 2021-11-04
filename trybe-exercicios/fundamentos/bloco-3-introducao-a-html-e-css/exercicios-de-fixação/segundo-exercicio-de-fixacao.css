@@ -1,0 +1,12 @@
+ol, p {
+    text-align: center;
+}
+ol :hover {
+background-color: blue;
+}
+ol :active {
+    font-family: 'Courier New', Courier, monospace;
+}
+ol, ul {
+    list-style:none
+}
