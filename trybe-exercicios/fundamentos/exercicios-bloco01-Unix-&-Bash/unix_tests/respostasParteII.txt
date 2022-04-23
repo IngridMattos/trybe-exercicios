@@ -1,0 +1,13 @@
+exercício 1: Baixar arquivo
+exercício 2: cat countries.txt
+exercício 3: less countries.txt
+exercício 4: less countries.txt, /Zambia, ENTER 
+exercício 5: less countries.txt, /Brazil, ENTER 
+exercício 6: grep -i brazil countries.txt
+exercício 7: 
+exercício 8: 
+exercício 9: 
+exercício 10: 
+exercício 11: 
+exercício 12: 
+exercício 13:
