@@ -1,0 +1,11 @@
+exercício 1: cd fundamentos; cd exercicios-bloco01-Unix-&-Bash; cd exercicios-bloco01-Unix-&-Bash-dia1; cd unix_tests;
+exercício 2: touch skills2.txt
+exercício 3: cat >> skills2.txt Internet, Unix, Bash.
+exercício 4: cat >> skills2.txt React, Node, Docker, MySql, Sql; sort < skills2.txt
+exercício 5: 
+exercício 6: 
+exercício 7: 
+exercício 8: 
+exercício 9: 
+exercício 10:
+exercício 11:
