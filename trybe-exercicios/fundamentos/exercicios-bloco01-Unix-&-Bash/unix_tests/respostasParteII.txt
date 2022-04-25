@@ -4,7 +4,8 @@ exercício 3: less countries.txt
 exercício 4: less countries.txt, /Zambia, ENTER 
 exercício 5: less countries.txt, /Brazil, ENTER 
 exercício 6: grep -i brazil countries.txt
-exercício 7: 
+exercício 7: hguiy
+
 exercício 8: 
 exercício 9: 
 exercício 10: 
