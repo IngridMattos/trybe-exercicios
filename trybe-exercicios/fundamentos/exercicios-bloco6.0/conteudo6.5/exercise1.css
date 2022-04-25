@@ -1,0 +1,28 @@
+body {
+ font-size: 100%;
+ display: flex;
+}
+h1 {
+ font-size: 95%;
+}
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 5px;
+    padding: 5%;
+}
+@media (min-width: 700px) {
+    body {
+        background-color: crimson;
+        font-size: 20px;
+        margin: 15px;
+        fle
+
+    }
+}
