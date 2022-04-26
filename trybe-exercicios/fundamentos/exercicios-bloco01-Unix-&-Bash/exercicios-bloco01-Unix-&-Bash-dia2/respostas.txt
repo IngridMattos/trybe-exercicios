@@ -1,11 +1,13 @@
+Parte I - Comandos de Input e Output
+
 exercício 1: cd fundamentos; cd exercicios-bloco01-Unix-&-Bash; cd exercicios-bloco01-Unix-&-Bash-dia1; cd unix_tests;
 exercício 2: touch skills2.txt
 exercício 3: cat >> skills2.txt Internet, Unix, Bash.
 exercício 4: cat >> skills2.txt React, Node, Docker, MySql, Sql; sort < skills2.txt
-exercício 5: 
-exercício 6: 
-exercício 7: 
-exercício 8: 
-exercício 9: 
-exercício 10:
-exercício 11:
+exercício 5: sort < skills2.txt | head -n 3 > top_skills.txt
+exercício 6: touch phrases2.txt; cat >> phrases2.txt.
+exercício 7: grep br phrases2.txt | wc -l
+exercício 8: grep -v br phrases2.txt | wc -l
+exercício 9: echo 'França' >> phrases2.txt; echo 'Alemanha' >> phrases2.txt
+exercício 10: cp countries.txt bunch_of_things.txt
+exercício 11: sort bunch_of_things.txt -o bunch_of_things.txt
