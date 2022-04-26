@@ -1,0 +1,7 @@
+Parte II - Permissões
+
+exercício 1: cd unix_tests; pwd
+exercício 2: ls -l
+exercício 3: chmod a+rw bunch_of_things.txt; ls -l.
+exercício 4: chmod a-w bunch_of_things.txt; ls -l.
+exercício 5: chmod 644 bunch_of_things.txt; ls -l.
