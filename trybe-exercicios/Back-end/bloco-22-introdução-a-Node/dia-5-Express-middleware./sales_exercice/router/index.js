@@ -1,14 +1,20 @@
 //  Configurações iniciais do servidor:
+
 // importando o express e o body-parser:
 const express = require('express');
 const bodyParser = require('body-parser');
 
+//importando a validação do productName
+const validateProductName = require('../middleware/validation');
+
 //instanciando o express:
 const app = express();
 
+app.use(bodyParser.json());
+
 // criando a porta: POST http://localhost:3001/sales,
 // necessário criar meddleware de validação na pasta middleware!
-app.post('/sales', (req, res) => (
+app.post('/sales', validateProductName ,(req, res) => (
     res.status(201).json({ message: 'sale criado com sucesso'})
 ));
 
