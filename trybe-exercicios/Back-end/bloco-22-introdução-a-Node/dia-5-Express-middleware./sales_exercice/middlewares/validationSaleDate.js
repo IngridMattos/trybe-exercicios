@@ -2,7 +2,7 @@
 
 
 module.exports = (req, res, next) => {
-    const { infos: {saleDate} } = req.body;
+    const { infos: { saleDate } } = req.body;
     if(!saleDate) {
         return res.status(400).json({ message: "O campo saleDate é obrigatório" },
         );
