@@ -17,3 +17,20 @@ const getAll = async (_req, res) => {
     return res.status(200).json(book);
   };
   
+  const createBook = async (req, res, next) => {
+    const { error } = Joi.object({
+      title: Joi.string().not().empty().required(),
+      bookId: Joi.string().not().empty().required(),
+    })
+      .validate(req.body);
+  
+    if (error) return next(error);
+  
+    const { title, bookId } = req.body;
+  
+    const newBook = await Book.createBook(title, bookId);
+  
+    if (newBook.error) return next(newBook.error);
+  
+    return res.status(201).json(newBook);
+  };
