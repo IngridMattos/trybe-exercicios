@@ -1,5 +1,5 @@
+// A modelagem é uma apenas para executar a query ? 
 const connection = require('../db/connection');
-
 
 const getAll = async () => {
     const [books] = await connection.execute('SELECT * FROM model_example.books;');
