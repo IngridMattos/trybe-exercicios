@@ -23,3 +23,14 @@ router.get('/book/:id', async (req, res) => {
     res.status(200).json(book);
   });
 
+router.post('/books', async (req, res) => {
+    const { title, author_id } = req.body;
+    
+    if (!await book.validationTitleAndId(title, author_id)) {
+      return res.status(400).json({ message: 'Dados inválidos' });
+    }
+    
+    await book.createNewBook(title, author_id);
+    
+    res.status(201).json({ message: 'Livro criado com sucesso! '});
+    });
