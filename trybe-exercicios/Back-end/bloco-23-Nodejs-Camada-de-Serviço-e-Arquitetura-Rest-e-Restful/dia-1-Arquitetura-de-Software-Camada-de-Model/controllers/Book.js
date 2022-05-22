@@ -34,3 +34,9 @@ const getAll = async (_req, res) => {
   
     return res.status(201).json(newBook);
   };
+
+  module.exports = {
+    getAll,
+    findById,
+    createBook,
+  };
