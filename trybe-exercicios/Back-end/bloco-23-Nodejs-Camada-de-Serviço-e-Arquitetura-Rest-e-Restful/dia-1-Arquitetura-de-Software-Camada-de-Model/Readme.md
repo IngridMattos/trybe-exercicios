@@ -33,3 +33,24 @@ praticar #2
 Continuando o exercício anterior faça o seguinte.
 
 1) Crie uma rota /books/:id e retorne o livro de acordo com o id passado por parâmetro. Se não existir, retorne um json no seguinte formato { message: 'Not found' }.
+   
+
+Vamos praticar #3
+
+Ainda usando a tabela books como referência crie uma rota books do tipo POST. Faça as seguintes validações:
+
+1) Título não pode ser vazio;
+1.1) Título precisa ter pelo menos três caracteres;
+1.2) O campo author_id não pode ser vazio;
+1.3) O campo author_id só é válido se existir uma pessoa autora com esse id;
+
+2) Se algum dos requisitos anteriores não for atendido, retornar um json no formato abaixo, com status 400.
+   
+   {
+	message: 'Dados inválidos'
+}
+ Caso contrário, insira o livro na tabela books e retorne o json no formato abaixo, com o status 201.
+
+{
+	message: 'Livro criado com sucesso!'
+}
