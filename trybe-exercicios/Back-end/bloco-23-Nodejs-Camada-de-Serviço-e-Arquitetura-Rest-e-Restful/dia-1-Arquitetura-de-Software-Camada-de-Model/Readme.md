@@ -54,3 +54,17 @@ Ainda usando a tabela books como referência crie uma rota books do tipo POST. F
 {
 	message: 'Livro criado com sucesso!'
 }
+
+DIA 2 
+
+Praticando
+
+Ontem, criamos um CRUD para a entidade Books. Vamos refatorar o código da aula de ontem aplicando a arquitetura MSC. Para isso:
+
+Exercício 1
+
+Crie um arquivo services/Book.js e aplique as regras de negócio definidos no modelo Book para dentro do service. (lembre-se de remover de models/Book.js o que não vai ser mais utilizado na camada de modelo).
+
+Exercício 2
+
+Crie um arquivo controllers/BooksController.js e transfira os middlewares relacionados ao nosso CRUD de livros para esse controller, aproveite também para criar o middleware de erro que foi ensinado no conteúdo de hoje.
