@@ -7,3 +7,13 @@ const getAll = async (_req, res) => {
     return res.status(200).json(books);
   };
   
+  const findById = async (req, res, next) => {
+    const { id } = req.params;
+  
+    const book = await Book.findById(id);
+  
+    if (book.error) return next(book.error);
+  
+    return res.status(200).json(book);
+  };
+  
