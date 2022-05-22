@@ -37,6 +37,19 @@ const getById = async (id) => {
     }))[0];
   }
 
+  // validação da modelagem a baixo.
+const validationTitleAndId = async (title, authorId) => {
+    if (!title || typeof title !== 'string' || title.length < 3) return false;
+  if (!authorId || typeof authorId !== 'number' || !(await Author.findById(authorId))) return false;
+
+  return true;
+};
+
+const createNewBook = async (title, authorId) => connection.execute(
+    'INSERT INTO model_example.books (title, author_id) VALUES (?,?)',
+    [title, authorId],
+    );
+
 module.exports = {
     getAll,
     getByAuthorId,
