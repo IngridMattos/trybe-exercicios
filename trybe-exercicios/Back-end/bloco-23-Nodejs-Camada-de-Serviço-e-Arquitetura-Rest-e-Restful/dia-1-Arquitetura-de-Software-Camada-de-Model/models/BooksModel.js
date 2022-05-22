@@ -53,4 +53,7 @@ const createNewBook = async (title, authorId) => connection.execute(
 module.exports = {
     getAll,
     getByAuthorId,
+    getById,
+    validationTitleAndId,
+    createNewBook,
   };
